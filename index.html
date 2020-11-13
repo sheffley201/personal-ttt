@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=0" />
+
+    <title>Tic-Tac-Toe</title>
+
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+
+  <body>
+    <div class ='game'>
+      <div class='data'>
+        <p class='x-wins'></p>
+        <p class='o-wins'></p>
+        <p class='draw'></p>
+      </div>
+      <div>
+        <div class="TTT-grid">
+          <div class="row">
+            <div class="spot" id="0">
+              <span>X</span>
+              <span>O</span>
+            </div>
+            <div class="spot" id="1">
+              <span>X</span>
+              <span>O</span>
+            </div>
+            <div class="spot" id="2">
+              <span>X</span>
+              <span>O</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="spot" id="3">
+              <span>X</span>
+              <span>O</span>
+            </div>
+            <div class="spot" id="4">
+              <span>X</span>
+              <span>O</span>
+            </div>
+            <div class="spot" id="5">
+              <span>X</span>
+              <span>O</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="spot" id="6">
+              <span>X</span>
+              <span>O</span>
+            </div>
+            <div class="spot" id="7">
+              <span>X</span>
+              <span>O</span>
+            </div>
+            <div class="spot" id="8">
+              <span>X</span>
+              <span>O</span>
+            </div>
+          </div>
+        </div>
+        <div class='win-line one'></div>
+        <div class='win-line two'></div>
+        <div class='win-line three'></div>
+        <div class='win-line four'></div>
+        <div class='win-line five'></div>
+        <div class='win-line six'></div>
+        <div class='win-line seven'></div>
+        <div class='win-line eight'></div>
+        <p class='info'></p>
+      </div>
+    </div>
+    <div class='mode-select'>
+      <button id='one-player'>1 player</button>
+      <button id='two-player'>2 players</button>
+      <button id='cpu-vs-cpu'>CPU v CPU</button>
+      <button id='reset-button'>Reset Game</button>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: sans-serif;
+  background-color: #fffff2;
+  text-align: center;
+}
+
+body {
+  width: 950px;
+  background-color: #ffffe4;
+  margin: 20px auto;
+  border: 2px solid #777;
+  border-radius: 15px;
+  padding: 30px;
+}
+
+.game {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.data {
+  border-right: 1px solid black;
+  padding: 30px 50px 30px 0;
+  width: 350px;
+}
+
+.TTT-grid {
+  display: table;
+  border-top: 5px;
+  border-bottom: 5px;
+  border-top-color: red;
+  border-bottom-color: red;
+  height: 450px;
+  width: 450px;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.row {
+  display: table-row;
+  border-top: 10px;
+  border-bottom: 10px;
+  border-top-color: red;
+  border-bottom-color: red;
+}
+
+.spot {
+  height: 45px;
+  border: 1px solid black;
+  display: table-cell;
+  width: 150px;
+  height: 150px;
+}
+
+span {
+  display: none;
+  text-align: center;
+  font-size: 100px;
+  margin-top: 22%;
+}
+
+p {
+  font-size: 50px;
+  text-align: center;
+}
+
+.x-wins {
+  margin-top: 10px;
+}
+
+.win-line {
+  position: absolute;
+  display: none;
+  width: 500px;
+  border: 1px solid black;
+}
+
+.one {
+  top: 25%;
+  left: 33%;
+}
+.two {
+  top: 45%;
+  left: 33%;
+}
+.three {
+  top: 67%;
+  left: 33%;
+}
+.four {
+  transform: rotate(0.25turn);
+  top: 45%;
+  left: 22%;
+}
+.five {
+  transform: rotate(0.25turn);
+  top: 45%;
+  left: 33%;
+}
+.six {
+  transform: rotate(0.25turn);
+  top: 45%;
+  left: 43%;
+}
+.seven {
+  transform: rotate(0.125turn);
+  top: 46%;
+  left: 33%;
+}
+.eight {
+  transform: rotate(-0.125turn);
+  top: 44%;
+  left: 33%;
+}
+
+button {
+  font-size: 30px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: 2px solid black;
+  background-color: #fffff2;
+}
+
+#reset-button {
+  display: none;
+}
