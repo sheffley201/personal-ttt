@@ -31,6 +31,7 @@ const modeSelect = document.querySelector('.mode-select');
 const button1p = document.querySelector('#one-player');
 const button2p = document.querySelector('#two-player');
 const buttonCvC = document.querySelector('#cpu-vs-cpu');
+const changeMode = document.querySelector('#change-mode');
 let gameWon = false;
 let oListener = false;
 let xListener = false;
@@ -378,18 +379,13 @@ const resetGame = function () {
   }
 };
 
-const hardReset = function () {
-  xWins = 0;
-  oWins = 0;
-  draws = 0;
-}
-
 const selectMode = function () {
-  console.log("I'm running");
+  gameWon = false;
   button1p.style.display = 'none';
   button2p.style.display = 'none';
   buttonCvC.style.display = 'none';
   resetButton.style.display = 'inline';
+  changeMode.style.display = 'inline';
   if (event.target.id == "one-player") {
     onePlayer = true;
     let nextPlayer = Math.random();
@@ -414,8 +410,28 @@ const selectMode = function () {
     } else {
       aiPlayerRandom2();
     }
+  } else if (event.target.id == 'change-mode') {
+    info.textContent = "Select a Mode";
+    onePlayer = false;
+    twoPlayer = false;
+    autoPlay = false;
+    gameWon = true;
+    xWins = 0;
+    oWins = 0;
+    draws = 0;
+    xInfo.textContent = "X wins: " + xWins;
+    oInfo.textContent = "O wins: " + oWins;
+    drawInfo.textContent = draws + " Draws";
+    resetGame();
+    button1p.style.display = 'inline';
+    button2p.style.display = 'inline';
+    buttonCvC.style.display = 'inline';
+    resetButton.style.display = 'none';
+    changeMode.style.display = 'none';
   }
 }
+
+info.textContent = 'Select a Mode';
 
 modeSelect.addEventListener('click', selectMode);
 

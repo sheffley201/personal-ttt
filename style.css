@@ -166,6 +166,6 @@ button {
   background-color: #fffff2;
 }
 
-#reset-button {
+#reset-button, #change-mode {
   display: none;
 }
