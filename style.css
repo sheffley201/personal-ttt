@@ -61,6 +61,42 @@ body {
   height: 150px;
 }
 
+.spot[id='0'] {
+  border: none;
+}
+
+.spot[id='1'] {
+  border-top: none;
+  border-bottom: none;
+}
+
+.spot[id='2'] {
+  border: none;
+}
+
+.spot[id='3'] {
+  border-left: none;
+  border-right: none;
+}
+
+.spot[id='5'] {
+  border-right: none;
+  border-left: none;
+}
+
+.spot[id='6'] {
+  border: none;
+}
+
+.spot[id='7'] {
+  border-bottom: none;
+  border-top: none;
+}
+
+.spot[id='8'] {
+  border: none;
+}
+
 span {
   display: none;
   text-align: center;
