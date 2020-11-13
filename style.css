@@ -21,10 +21,13 @@ body {
 
 .game {
   display: flex;
-  position: relative;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 15px;
+}
+
+.grid-lines {
+  position: relative;
 }
 
 .data {
@@ -116,47 +119,49 @@ p {
 
 .win-line {
   position: absolute;
-  display: nomne;
-  width: 500px;
-  border: 1px solid black;
+  display: none;
+  width: 450px;
+  border: 3px solid #000a;
 }
 
 .one {
-  top: 25%;
-  left: 33%;
+  top: 95px;
+  right: 0px;
 }
 .two {
-  top: 45%;
-  left: 33%;
+  top: 240px;
+  right: 0px;
 }
 .three {
-  top: 67%;
-  left: 33%;
+  top: 390px;
+  right: 0px;
 }
 .four {
   transform: rotate(0.25turn);
-  top: 45%;
-  left: 22%;
+  top: 239px;
+  right: 150px;
 }
 .five {
   transform: rotate(0.25turn);
-  top: 45%;
-  left: 33%;
+  top: 239px;
+  right: 0px;
 }
 .six {
   transform: rotate(0.25turn);
-  top: 45%;
-  left: 43%;
+  top: 239px;
+  right: -150px;
 }
 .seven {
+  width: 600px;
   transform: rotate(0.125turn);
-  top: 46%;
-  left: 33%;
+  top: 235px;
+  right: -72px;
 }
 .eight {
+  width: 600px;
   transform: rotate(-0.125turn);
-  top: 44%;
-  left: 33%;
+  top: 235px;
+  left: -72px;
 }
 
 button {
