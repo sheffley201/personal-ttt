@@ -409,7 +409,7 @@ const selectMode = function () {
       aiPlayerRandom2();
     }
   } else if (event.target.id == 'change-mode') {
-    info.textContent = "Select a Mode";
+    info.textContent = "Select Mode";
     onePlayer = false;
     twoPlayer = false;
     autoPlay = false;
@@ -429,7 +429,7 @@ const selectMode = function () {
   }
 }
 
-info.textContent = 'Select a Mode';
+info.textContent = 'Select Mode';
 
 modeSelect.addEventListener('click', selectMode);
 
