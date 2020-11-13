@@ -21,6 +21,7 @@ body {
 
 .game {
   display: flex;
+  position: relative;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 15px;
@@ -115,7 +116,7 @@ p {
 
 .win-line {
   position: absolute;
-  display: none;
+  display: nomne;
   width: 500px;
   border: 1px solid black;
 }
