@@ -190,6 +190,7 @@ button {
   .game {
     flex-direction:  column;
     width: 350px;
+    margin: 0 auto;
   }
   .data {
     width: auto;
