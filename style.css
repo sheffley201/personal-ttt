@@ -58,7 +58,6 @@ body {
 }
 
 .spot {
-  height: 45px;
   border: 1px solid black;
   display: table-cell;
   width: 150px;
@@ -174,4 +173,46 @@ button {
 
 #reset-button, #change-mode {
   display: none;
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    width: auto;
+    margin: 5px;
+    padding: 10px;
+  }
+  p {
+    font-size: 35px;
+  }
+  .data {
+    padding: 0;
+  }
+  .game {
+    flex-direction:  column;
+    width: 350px;
+  }
+  .data {
+    width: auto;
+    border: none;
+  }
+  .mode-select {
+    display: flex;
+    flex-direction: column;
+  }
+  .TTT-grid {
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+  }
+  .spot {
+    width: 33%;
+    height: 33%;
+  }
+  span {
+    font-size: 80px;
+    margin-top: 15%;
+  }
+  .win-line {
+    display: none;
+  }
 }
