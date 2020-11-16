@@ -37,6 +37,7 @@ let onePlayer = false;
 let twoPlayer = false;
 let autoPlay = false;
 let slowPlace;
+const mediaQuery = window.matchMedia('(min-width: 401px)');
 
 //check if anyone has won the game
 const checkWin = function () {
@@ -49,7 +50,9 @@ const checkWin = function () {
     info.textContent = "X wins!";
     xWins++;
     gameWon = true;
-    winLines[0].style.display = 'block';
+    if (mediaQuery.matches) {
+      winLines[0].style.display = 'block';
+    }
   } else if (
     ticTacToeGrid[3].value == "x" &&
     ticTacToeGrid[4].value == "x" &&
@@ -58,7 +61,9 @@ const checkWin = function () {
     info.textContent = "X wins!";
     xWins++;
     gameWon = true;
-    winLines[1].style.display = 'block';
+    if (mediaQuery.matches) {
+      winLines[1].style.display = 'block';
+    }
   } else if (
     ticTacToeGrid[6].value == "x" &&
     ticTacToeGrid[7].value == "x" &&
@@ -67,7 +72,9 @@ const checkWin = function () {
     info.textContent = "X wins!";
     xWins++;
     gameWon = true;
-    winLines[2].style.display = 'block';
+    if (mediaQuery.matches) {
+      winLines[2].style.display = 'block';
+    }
   } else if (
     ticTacToeGrid[0].value == "x" &&
     ticTacToeGrid[3].value == "x" &&
@@ -76,7 +83,9 @@ const checkWin = function () {
     info.textContent = "X wins!";
     xWins++;
     gameWon = true;
-    winLines[3].style.display = 'block';
+    if (mediaQuery.matches) {
+      winLines[3].style.display = 'block';
+    }
   } else if (
     ticTacToeGrid[1].value == "x" &&
     ticTacToeGrid[4].value == "x" &&
@@ -85,7 +94,9 @@ const checkWin = function () {
     info.textContent = "X wins!";
     xWins++;
     gameWon = true;
-    winLines[4].style.display = 'block';
+    if (mediaQuery.matches) {
+      winLines[4].style.display = 'block';
+    }
   } else if (
     ticTacToeGrid[2].value == "x" &&
     ticTacToeGrid[5].value == "x" &&
@@ -94,7 +105,9 @@ const checkWin = function () {
     info.textContent = "X wins!";
     xWins++;
     gameWon = true;
-    winLines[5].style.display = 'block';
+    if (mediaQuery.matches) {
+      winLines[5].style.display = 'block';
+    }
   } else if (
     ticTacToeGrid[0].value == "x" &&
     ticTacToeGrid[4].value == "x" &&
@@ -103,7 +116,9 @@ const checkWin = function () {
     info.textContent = "X wins!";
     xWins++;
     gameWon = true;
-    winLines[6].style.display = 'block';
+    if (mediaQuery.matches) {
+      winLines[6].style.display = 'block';
+    }
   } else if (
     ticTacToeGrid[2].value == "x" &&
     ticTacToeGrid[4].value == "x" &&
@@ -112,7 +127,9 @@ const checkWin = function () {
     info.textContent = "X wins!";
     xWins++;
     gameWon = true;
-    winLines[7].style.display = 'block';
+    if (mediaQuery.matches) {
+      winLines[7].style.display = 'block';
+    }
   }
 
   //win conditions for O
@@ -124,7 +141,9 @@ const checkWin = function () {
     info.textContent = "O wins!";
     oWins++;
     gameWon = true;
-    winLines[0].style.display = 'block';
+    if (mediaQuery.matches) {
+      winLines[0].style.display = 'block';
+    }
   } else if (
     ticTacToeGrid[3].value == "o" &&
     ticTacToeGrid[4].value == "o" &&
@@ -133,7 +152,9 @@ const checkWin = function () {
     info.textContent = "O wins!";
     oWins++;
     gameWon = true;
-    winLines[1].style.display = 'block';
+    if (mediaQuery.matches) {
+      winLines[1].style.display = 'block';
+    }
   } else if (
     ticTacToeGrid[6].value == "o" &&
     ticTacToeGrid[7].value == "o" &&
@@ -142,7 +163,9 @@ const checkWin = function () {
     info.textContent = "O wins!";
     oWins++;
     gameWon = true;
-    winLines[2].style.display = 'block';
+    if (mediaQuery.matches) {
+      winLines[2].style.display = 'block';
+    }
   } else if (
     ticTacToeGrid[0].value == "o" &&
     ticTacToeGrid[3].value == "o" &&
@@ -151,7 +174,9 @@ const checkWin = function () {
     info.textContent = "O wins!";
     oWins++;
     gameWon = true;
-    winLines[3].style.display = 'block';
+    if (mediaQuery.matches) {
+      winLines[3].style.display = 'block';
+    }
   } else if (
     ticTacToeGrid[1].value == "o" &&
     ticTacToeGrid[4].value == "o" &&
@@ -160,7 +185,9 @@ const checkWin = function () {
     info.textContent = "O wins!";
     oWins++;
     gameWon = true;
-    winLines[4].style.display = 'block';
+    if (mediaQuery.matches) {
+      winLines[4].style.display = 'block';
+    }
   } else if (
     ticTacToeGrid[2].value == "o" &&
     ticTacToeGrid[5].value == "o" &&
@@ -169,7 +196,9 @@ const checkWin = function () {
     info.textContent = "O wins!";
     oWins++;
     gameWon = true;
-    winLines[5].style.display = 'block';
+    if (mediaQuery.matches) {
+      winLines[5].style.display = 'block';
+    }
   } else if (
     ticTacToeGrid[0].value == "o" &&
     ticTacToeGrid[4].value == "o" &&
@@ -178,7 +207,9 @@ const checkWin = function () {
     info.textContent = "O wins!";
     oWins++;
     gameWon = true;
-    winLines[6].style.display = 'block';
+    if (mediaQuery.matches) {
+      winLines[6].style.display = 'block';
+    }
   } else if (
     ticTacToeGrid[2].value == "o" &&
     ticTacToeGrid[4].value == "o" &&
@@ -187,7 +218,9 @@ const checkWin = function () {
     info.textContent = "O wins!";
     oWins++;
     gameWon = true;
-    winLines[7].style.display = 'block';
+    if (mediaQuery.matches) {
+      winLines[7].style.display = 'block';
+    }
   }
 
   //if no winner, check for draw
@@ -202,8 +235,10 @@ const checkWin = function () {
       draws++;
       gameWon = true;
       info.textContent = "It's a draw!";
-      winLines[6].style.display = 'block';
-      winLines[7].style.display = 'block';
+      if (mediaQuery.matches) {
+        winLines[6].style.display = 'block';
+        winLines[7].style.display = 'block';
+      }
     }
   }
 
