@@ -175,6 +175,7 @@ button {
   display: none;
 }
 
+/*Styles for mobile gaming*/
 @media only screen and (max-width: 500px) {
   body {
     width: auto;
