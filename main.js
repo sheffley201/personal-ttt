@@ -37,7 +37,7 @@ let onePlayer = false;
 let twoPlayer = false;
 let autoPlay = false;
 let slowPlace;
-const mediaQuery = window.matchMedia('(min-width: 401px)');
+const mediaQuery = window.matchMedia('(min-width: 501px)');
 
 //check if anyone has won the game
 const checkWin = function () {
