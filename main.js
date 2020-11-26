@@ -37,7 +37,7 @@ let onePlayer = false;
 let twoPlayer = false;
 let autoPlay = false;
 let slowPlace;
-const mediaQuery = window.matchMedia('(min-width: 501px)');
+const mediaQuery = window.matchMedia('(min-width: 401px)');
 
 //check if anyone has won the game
 const checkWin = function () {
@@ -401,7 +401,7 @@ const resetGame = function () {
     } else if (twoPlayer) {
       addX();
     }
-  } else {
+  } else if (nextPlayer < 0.5){
     if (autoPlay) {
       aiPlayerRandom2();
     } else if (onePlayer) {
